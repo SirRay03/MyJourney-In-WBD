@@ -1,0 +1,204 @@
+<!-- Tipe dokumen declaration -->
+<!DOCTYPE html>
+<!-- Every file begins and ends with html tag. Language buat bahasa file -->
+<html lang="en">
+    <!-- "head" contains metadata. Unseen in webpage -->
+    <head>
+        <!-- "meta" is the metadata -->
+        <meta charset = "UTF-8">
+        <meta name="author" content="RaySi">
+        <meta name="description" content="Ceritanya Belajar HTML">
+        <!-- "title" is the title of the page --> 
+        <title>Ceritanya belajar</title>
+        <!-- Logo buat di atasnya -->
+        <link rel="icon" href="html5.png" type="image/x-icon">
+        <!-- "style" is the css style -->
+        <link rel="stylesheet" href="main.css">
+        <!--
+        <script>
+            // Muncul di console doang
+            console.log("Hello World!")
+        </script>
+        -->
+        <!-- ALTERNATIVE -->
+        <script src="../JavaScript/chapter2/main.js"></script>
+    </head>
+
+    <body>
+        <header>
+        <!-- HEADER 1 -->
+        <h1>Hello World!</h1>
+        <!-- Line break -->
+        <br>
+        <hr>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li><a href="#nyoba1">Nyoba 1</a></li>
+                <li><a href="#nyoba2">Nyoba 2</a></li>
+                <li><a href="#Tabel">Tables</a></li>
+                <li><a href="semantic.html">Semantic Tags</a></li>
+                <li><a href="form.html">Forms</a></li>
+            </ul>
+        </nav>
+        </header>
+        <hr>
+        <!-- Horizontal line -->
+        <main>
+        <hr>
+        <article id="nyoba1">
+        <!-- HEADER 2 -->
+        <h2>Header 2</h2>
+        <!-- Paragraph -->
+        <p>Testing 1 2 3</p>
+        <!-- HEADER 3 -->
+        <h3>Header 3</h3>
+        <p>Lebih kecil dari H2
+        <br>Tapi isi paragrafnya sama ukurannya.
+        </p>
+        <p>Ini jaraknya lebih jauh</p>
+
+        <p>Tulisan yang penting dikasih <em>em</em></p>
+        <p>Kalau mau tebel pakai <strong>strong</strong></p>
+        <p>&nbsp; nbsp buat indent di depan</p>
+        <p>&lt;p&gt;Bisa bikin inception di html pake lt sama gt&lt;/p&gt;</p>
+        <hr>
+        <h3>LIST</h3>
+        <p>Ini buat bikin list</p>
+        <p>Ordered List:</p>
+        <ol>
+            <li>Ini ordered list 1</li>
+            <li>Ini ordered list 2</li>
+            <li>Ini ordered list 3</li>
+        </ol>
+        <p>Unordered List:</p>
+        <ul>
+            <li>Ini unordered list 1</li>
+            <li><p>List bisa diisi yang lain juga</p>
+            <address>Pondok Kelapa Permai</address>
+            </li>
+        </ul>
+
+        <p>Description list:</p>
+        <dl>
+            <dt>Ini description term</dt>
+            <dd>Ini description detail</dd>
+            <dt>Ini description list 2</dt>
+            <dd>Ini description list 2</dd>
+        </dl>
+    </article>
+        <hr>
+        <section id="nyoba2">
+        <h3>LINKS</h3>
+        <p> anchor tag buat bikin link --> </p>
+        <p><a href="https://www.google.com" target="_blank">Ini link ke google</a></p>
+        </section>
+
+    <hr>
+    
+    <article id="Tabel">
+        <h2>Tables</h2>
+        <section>
+            <h3>Tabel 1</h3>
+            <p>Ini buat bikin tabel</p>
+            <table>
+                <caption>Ini Judulnya</caption>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DATA</td>
+                        <td>DATA</td>
+                        <td>DATA</td>
+                    </tr>
+                    <tr>
+                        <td>DATA</td>
+                        <td>DATA</td>
+                        <td>DATA</td>
+                    </tr>
+                    <tr>
+                        <td>DATA</td>
+                        <td>DATA</td>
+                        <td>DATA</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Footer 1</td>
+                        <td>Footer 2</td>
+                        <td>Footer 3</td>
+                    </tr>
+                    <tr>
+                        <td>Kecil</td>
+                        <td colspan="2">Besar</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <table>
+                <caption>My Daily Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Morning</th>
+                        <td>
+                            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                        </td>
+                        <td>Write Code</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Break</th>
+                        <td>
+                            <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                        </td>
+                        <td>Eat Lunch</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Afternoon</th>
+                        <td>
+                            <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                        </td>
+                        <td>Study for Other Courses</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Evening</th>
+                        <td rowspan="2">All Other Times</td>
+                        <td>Free Time</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Night</th>
+                        <td>Sleep</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">And that's what I do every day, 5 days a week. Just eat, sleep, code ..and
+                            recharge!</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </section>
+    </article>
+
+        </main>
+        <hr>
+        <footer>
+        <p>&copy; <abbr title="Dua ribu dua puluh tiga">2023</abbr> <a href="about.html">RaySi</a></p>
+        <address>Jl. Sukahaji Baru No.18
+        <br>Bandung, Jawa Barat
+        </address>
+        <p><a href="#">Back To Top</a></p>
+        </footer>
+    </body>
+</html>

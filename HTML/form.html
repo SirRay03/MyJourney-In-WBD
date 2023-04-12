@@ -1,0 +1,128 @@
+<!-- Tipe dokumen declaration -->
+<!DOCTYPE html>
+<!-- Every file begins and ends with html tag. Language buat bahasa file -->
+<html lang="en">
+    <!-- "head" contains metadata. Unseen in webpage -->
+    <head>
+        <!-- "meta" is the metadata -->
+        <meta charset = "UTF-8">
+        <meta name="author" content="RaySi">
+        <meta name="description" content="Ceritanya Belajar HTML">
+        <!-- "title" is the title of the page --> 
+        <title>Ceritanya belajar</title>
+        <!-- Logo buat di atasnya -->
+        <link rel="icon" href="html5.png" type="image/x-icon">
+        <!-- "style" is the css style -->
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                <em>LESSON 9: FORMS</em>
+            </h1>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="semantic.html">Semantic Tags</a></li>
+                    <li><a href="form.html">Forms</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+
+        <main>
+            <article id="isi">
+                <h2>PART 1</h2>
+                <p>Ceritanya contact me</p>
+
+                <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Asal isi</legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <!-- id == label for -->
+                        <!-- name  = how it will be recognised in server level -->
+                        <!-- placeholder = tulisan burem -->
+                        <!-- autocomplete = on/off -->
+                        <!-- required = wajib isi -->
+                        <!-- autofocus = otomatis fokus ke input -->
+                        <input type="text" name="firstName" id="firstName" placeholder="Contoh nama depan" autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Contoh nama belakang" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="qwerty12345" required>
+                    </p>
+                    <p>
+                        <label for="telephone">No. Telp:</label>
+                        <input type="tel" name="telephone" id="telephone" placeholder="081234567890" pattern="[0-9]{4}[0-9]{4}[0-9]{4}" required>
+                    </p>
+                    <p>
+                        <label for="number110">Angka genap antara 0-20:</label>
+                        <input type="number" name="number110" id="number110" placeholder="4" min="0" max="20" step="2" required>
+                    </p>
+                    <p>
+                        <!-- multiple = bisa pilih banyak, size = ukuran kotak select-->
+                        <label for="coffee">Favorite Coffee:</label>
+                        <select name="coffee" id="coffee" multiple size="5">
+                            <optgroup label="Group1">
+                                <option value="latte">Latte</option>
+                                <option value="mocca">Moccachino</option>
+                            </optgroup>
+                            <optgroup label="Group2">
+                                <option value="americano">Americano</option>
+                                <option value="cappucino">Cappucino</option>
+                                <option value="tubruk">Tubruk</option>
+                                <option value="whitecoffee">White Coffee</option>
+                            </optgroup>
+                            <option value="lainnya">lainnya</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="coffee">Favorite Drink:</label>
+                        <input type="text" name="drink" id="drink" list="drinkList" placeholder="Contoh: Teh">
+                        <datalist id="drinkList">
+                            <option value="Teh">
+                            <option value="Kopi">
+                            <option value="Jus">
+                            <option value="Air">
+                            <option value="Susu">
+                        </datalist>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Lah ada lagi</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="nasiPadang" value="nasiPadang">
+                        <label for="nasiPadang">Nasi Padang</label>
+                    </p>
+                </fieldset>
+                </form>
+            </article>
+        </main>
+
+        <hr>
+
+        <footer>
+        <p>&copy; <abbr title="Dua ribu dua puluh tiga">2023</abbr> <a href="about.html">RaySi</a></p>
+        <address>Jl. Sukahaji Baru No.18
+        <br>Bandung, Jawa Barat
+        </address>
+        <p><a href="#">Back To Top</a></p>
+        </footer>
+    </body>
+</html>

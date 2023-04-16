@@ -10,3 +10,11 @@ delete artistsAndSongs["Keyakizaka46"];
 artistsAndSongs["Blackpink"].push("Rose - Gone");
 
 console.log(artistsAndSongs);
+
+function multiply(num) {
+    total = num * num;
+}
+
+const result = multiply(3);
+
+console.log(result);
